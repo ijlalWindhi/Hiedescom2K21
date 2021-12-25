@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belanja | Mainkan</title>
+    <link rel="shortcut icon" href="asset/image/logoIcon.jpg" />
+
+    <!-- embedding css -->
+    <link rel="stylesheet" href="asset/css/belanja.css" />
+    <link rel="stylesheet" href="asset/css/navbar.css" />
+    <link rel="stylesheet" href="asset/css/footer.css" />
+    <link rel="stylesheet" href="asset/css/preloader.css" />
+    <link rel="stylesheet" href="asset/css/animationScroll.css" />
+    <script
+      src="https://kit.fontawesome.com/22a69e2285.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="asset/js/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="content-nav">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="asset/image/logo.png" alt="" srcset=""
+          /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li>
+            <a href="index.html">Beranda</a>
+          </li>
+          <li><a href="tentangKami.html">Tentang Kami</a></li>
+          <li><a href="permainan.html">Permainan</a></li>
+          <li>
+            <a href="#"><span>Belanja</span></a>
+          </li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="content">
+        <h1 class="heading1 play fadeInLeft">
+          Produk Mainan Tradisional Nusantara
+        </h1>
+        <p class="paragraph play fadeInRight">
+          Yuk Bantu UMKM dan produsen mainan tradisional untuk dapat
+          mengembangkan bisnisnya di era pandemi ini!
+        </p>
+        <div class="wrapper play fadeIn delay3">
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <a
+              href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Fmainkan.netlify.app%2F&text=Mainkan%20rame%20rame%20lebih%20seru%20Permainan%20boleh%20tradisional%20tetapi%20teknologi%20harus%20modern"
+              target="_blank"
+              ><span>Twitter</span></a
+            >
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=https://mainkan.netlify.app/"
+              target="_blank"
+              ><span>Facebook</span></a
+            >
+          </div>
+          <div class="button">
+            <div class="icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <a
+              href="whatsapp://send?text=Mainkan rame-rame lebih seru, Permainan boleh tradisional tetapi teknologi harus modern. https://mainkan.netlify.app/"
+              target="_blank"
+              ><span>whatssapp</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="asset/image/belanja/gangsing_belanja.png" alt="gangsing" />
+      </div>
+      <div class="icon-panah play fadeIn delay4">
+        <a href="#shop"
+          ><img
+            src="asset/image/tentangKami/iconPanah_tentangKami.svg"
+            alt="icon panah"
+        /></a>
+      </div>
+    </section>
+
+    <!-- Belanja -->
+    <section class="shop" id="shop">
+      <div class="content">
+        <div class="top-text">
+          <h2 class="heading1">Pilih Produk Mainan!</h2>
+        </div>
+        <div class="container">
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/ketapel_belanja.png"
+                alt="ketapel"
+                class="image"
+              />
+              <h2>Ketapel</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang5_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 20.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/gangsing1_belanja.png"
+                alt="gangsing"
+                class="image"
+              />
+              <h2>Gangsing</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang5_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 15.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/bolaBekel_belanja.png"
+                alt="bola bekel"
+                class="image"
+              />
+              <h2>Bola Bekel</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang4_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 10.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/bakiak_belanja.png"
+                alt="bakiak"
+                class="image"
+              />
+              <h2>Bakiak</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang5_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 30.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/kelereng_belanja.png"
+                alt="kelereng"
+                class="image"
+              />
+              <h2>Kelereng</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang5_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 5.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/egrang_belanja.png"
+                alt="egrang"
+                class="image"
+              />
+              <h2>Egrang</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang5_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 50.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/dakon_belanja.png"
+                alt="dakon"
+                class="image"
+              />
+              <h2>Dakon</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang4_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 40.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/layangan_belanja.png"
+                alt="layangan"
+                class="image"
+              />
+              <h2>Layangan</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang5_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 35.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+          <div class="card onScroll flip hidden">
+            <div class="imgBox">
+              <img
+                src="asset/image/belanja/kapal_belanja.png"
+                alt="kapal tok tok"
+                class="image"
+              />
+              <h2>Kapal Tok Tok</h2>
+              <div class="bintang">
+                <img
+                  src="asset/image/belanja/bintang4_belanja.png"
+                  alt="bintang"
+                />
+              </div>
+              <p>Rp 20.000</p>
+              <a href="https://wa.wizard.id/11aab3" target="_blank"
+                ><h3>Beli</h3></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="asset/image/logoFooter.png" alt="" srcset=""
+            /></a>
+            <div class="social-links">
+              <p>Nikmati keseruan bermain dan belajar hanya dari rumah saja</p>
+            </div>
+          </div>
+          <div class="footer-col teks">
+            <h4>Permainan</h4>
+            <ul>
+              <li><a href="gedrik.html">Gedrik</a></li>
+              <li><a href="ulartangga.html">Ular Tangga</a></li>
+              <li><a href="dakon.html">Dakon</a></li>
+              <li><a href="damdaman.html">DamDaman</a></li>
+              <li>
+                <a href="permainan.html"><span>Lihat Lainnya</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Produk Mainan</h4>
+            <ul>
+              <li><a href="belanja.html">Layangan</a></li>
+              <li><a href="belanja.html">Kelereng</a></li>
+              <li><a href="belanja.html">Dakon</a></li>
+              <li><a href="belanja.html">Gangsing</a></li>
+              <li>
+                <a href="belanja.html"><span>Lihat Lainnya</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Bagikan</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Fmainkan.netlify.app%2F&text=Mainkan%20rame%20rame%20lebih%20seru%20Permainan%20boleh%20tradisional%20tetapi%20teknologi%20harus%20modern"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://t.me/share/url?url=https%3A%2F%2Fmainkan.netlify.app%2F&text=Mainkan%20rame%20rame%20lebih%20seru%20Permainan%20boleh%20tradisional%20tetapi%20teknologi%20harus%20modern"
+                  target="_blank"
+                  >Telegram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://mainkan.netlify.app/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="whatsapp://send?text=Mainkan rame-rame lebih seru, Permainan boleh tradisional tetapi teknologi harus modern. https://mainkan.netlify.app/"
+                  target="_blank"
+                  data-action="share/whatsapp/share"
+                  >whatssapp</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="waterMark">
+        <p>Created by Goldenius Team</p>
+      </div>
+    </footer>
+
+    <!-- Embedding JS -->
+    <script src="asset/js/navbar.js"></script>
+    <script src="asset/js/preloader.js"></script>
+    <script src="asset/js/animationScroll.js"></script>
+  </body>
+</html>

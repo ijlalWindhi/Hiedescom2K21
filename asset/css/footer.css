@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap");
+:root {
+  --orange: #ea4100;
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: #00334c;
+  --gray: #808080;
+}
+.footer {
+  background-color: #fff;
+  box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 70px 0 0 0;
+  font-family: "Poppins", sans-serif;
+}
+.footer .container {
+  max-width: 80%;
+  margin: auto;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer ul {
+  list-style: none;
+}
+.footer-col {
+  width: 20%;
+  padding: 0 76px;
+}
+.footer .logo {
+  width: 40%;
+}
+.footer .logo img {
+  width: 10vw;
+  margin-bottom: 20px;
+}
+.footer .logo .social-links p {
+  font-size: 0.9rem;
+  color: #000;
+  position: relative;
+  width: 60%;
+}
+.footer .logo .social-links p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -20px;
+  background-color: var(--orange);
+  height: 5px;
+  box-sizing: border-box;
+  width: 110px;
+  border-radius: 20px;
+}
+.footer-col h4 {
+  font-size: 1.2rem;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a span {
+  color: var(--orange);
+}
+.footer-col ul li a:hover {
+  color: #000;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.footer .waterMark p {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 13px;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .footer .container {
+    max-width: 100%;
+  }
+  .footer-col,
+  .footer .logo {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 40px;
+  }
+  .footer .logo img {
+    width: 70vw;
+  }
+  .footer .logo .social-links p {
+    width: 100%;
+  }
+}

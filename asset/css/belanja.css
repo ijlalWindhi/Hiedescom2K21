@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap");
+:root {
+  --orange: #ea4100;
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: #00334c;
+  --gray: #808080;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--white);
+  min-height: 100vh;
+}
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Teks */
+.heading {
+  font-family: "Ubuntu", sans-serif;
+  /* font-size: 5.591rem; */
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.heading1 {
+  font-family: "Ubuntu", sans-serif;
+  /* font-size: 4.409rem; */
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+.heading2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.704rem; */
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--white);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Home */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(../image/belanja/banner_belanja.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home .content {
+  margin-top: -125px;
+}
+.home .image img {
+  width: 30vw;
+  position: relative;
+  right: 0;
+  top: -45px;
+}
+.home .icon-panah img {
+  width: 50px;
+  position: absolute;
+  right: 50%;
+  bottom: 30px;
+  animation: float 2s linear infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+}
+.home .content h1 {
+  max-width: 100%;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+.home .content p {
+  max-width: 60%;
+  margin-bottom: 40px;
+  color: var(--white);
+}
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+  width: 200px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon {
+  background: #ff0000;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+  color: #ff0000;
+}
+
+/* Belanja */
+.shop .content .top-text {
+  display: flex;
+  justify-content: space-between;
+}
+.shop .content .top-text h2 {
+  position: relative;
+}
+.shop .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.shop .container .card {
+  position: relative;
+  max-width: 350px;
+  height: 480px;
+  background: #fff;
+  margin: 50px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+.shop .container .card .imgBox {
+  position: relative;
+  padding: 30px;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+}
+.shop .container .card .imgBox .image {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.shop .container .card .imgBox div img {
+  position: relative;
+  width: 70px;
+  bottom: -35px;
+  right: 30px;
+}
+.shop .container .card .imgBox .bintang img {
+  position: absolute;
+  width: 130px;
+  left: 42px;
+  bottom: -52px;
+}
+.shop .container .card .imgBox h2 {
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+.shop .container .card .imgBox p {
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: var(--orange);
+}
+.shop .container .card .imgBox h3 {
+  padding: 5px 33px;
+  margin: -32px 0 0 180px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+@media (max-width: 1200px) {
+  .home .content h1 {
+    font-size: 3rem;
+  }
+  .home .content p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .wrapper .button {
+    height: 40px;
+    width: 40px;
+  }
+  .wrapper .button:hover {
+    width: 150px;
+  }
+  .wrapper .button .icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+  .wrapper .button .icon i {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .wrapper .button span {
+    font-size: 15px;
+    line-height: 40px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-flow: column;
+  }
+  .home .content {
+    margin-top: -100px;
+  }
+  .home .image img {
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+    margin-top: -100px;
+  }
+  .home .icon-panah img {
+    width: 10vw;
+    bottom: 40px;
+    right: 45%;
+  }
+  .home .content h1 {
+    font-size: 2rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .home .content p {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .shop .content .top-text h2 {
+    font-size: 1.8rem;
+    max-width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .shop .container .card {
+    max-width: 250px;
+    height: 325px;
+  }
+  .shop .container .card .imgBox {
+    width: 250px;
+    height: 250px;
+  }
+  .shop .container .card .imgBox div img {
+    width: 50px;
+    bottom: -20px;
+    right: 10px;
+  }
+  .shop .container .card .imgBox .bintang img {
+    width: 100px;
+    left: 42px;
+    bottom: -35px;
+  }
+  .shop .container .card .imgBox h2 {
+    font-size: 1.2rem;
+  }
+  .shop .container .card .content {
+    margin-top: -140px;
+    padding: 30px 15px;
+    font-size: 0.9rem;
+    color: var(--black);
+  }
+  .shop .container .card .content h2 {
+    font-size: 1.2rem;
+    width: 250px;
+  }
+  .shop .container .card .imgBox h3 {
+    padding: 2px 18px;
+    margin: -25px 0 0 140px;
+    width: 60px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .shop .container .card .imgBox p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+}

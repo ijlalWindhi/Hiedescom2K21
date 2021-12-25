@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap");
+:root {
+  --orange: #ea4100;
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: #00334c;
+  --gray: #808080;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--white);
+  min-height: 100vh;
+}
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+img {
+  -webkit-user-drag: none;
+}
+
+/* Teks */
+.heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.heading1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+.heading2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+/* Home */
+.homePenjelasan {
+  background-color: #f7f8f9;
+  position: relative;
+}
+.homePenjelasan .content-top {
+  display: flex;
+  margin: 30px auto auto auto;
+}
+.homePenjelasan .content-top .content-left img {
+  border-radius: 30px;
+  width: 33vw;
+}
+.homePenjelasan .content-top .content-right {
+  margin: auto auto auto 100px;
+}
+.homePenjelasan .content-top .content-right h2 {
+  margin-bottom: 5px;
+}
+.homePenjelasan .content-top .content-right p {
+  margin-bottom: 40px;
+}
+.homePenjelasan .content-top .content-right h3 {
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 10px 40px;
+  width: 160px;
+  border-radius: 10px;
+}
+.homePenjelasan .background img {
+  width: 40vw;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+/* Deskripsi */
+.deskripsi .content h2 {
+  text-align: center;
+  color: var(--orange);
+}
+.deskripsi .content .teks {
+  display: flex;
+  margin-top: 50px;
+}
+.deskripsi .content .teks h3 {
+  font-size: 2rem;
+}
+.deskripsi .content .teks .teks-left h3 {
+  background-color: var(--orange);
+  color: var(--white);
+  width: 60px;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.deskripsi .content .teks .teks-right {
+  margin-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .homePenjelasan .content-top .content-right h2,
+  .deskripsi .content h2 {
+    font-size: 2.5rem;
+  }
+  .homePenjelasan .content-top .content-right p,
+  .deskripsi .content p {
+    margin-bottom: 1rem;
+  }
+  .homePenjelasan .background img {
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .homePenjelasan .content-top {
+    margin: auto;
+  }
+  .homePenjelasan .content-top .content-left img {
+    min-width: 350px;
+  }
+  .homePenjelasan .content-top .content-right {
+    margin: auto auto auto 30px;
+  }
+  .homePenjelasan .content-top .content-right h2,
+  .deskripsi .content h2 {
+    font-size: 2rem;
+  }
+  .homePenjelasan .content-top .content-right p,
+  .deskripsi .content p {
+    font-size: 0.9rem;
+  }
+  .deskripsi .content .teks h3 {
+    font-size: 1.8rem;
+  }
+  .deskripsi .content .teks .teks-left h3 {
+    font-size: 1.8rem;
+    width: 50px;
+    padding: 3px 20px;
+  }
+  .homePenjelasan .background img {
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homePenjelasan .content-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .homePenjelasan .content-top .content-left img {
+    min-width: 200px;
+  }
+  .homePenjelasan .content-top .content-right {
+    margin: 10px auto auto auto;
+  }
+  .homePenjelasan .content-top .content-right p {
+    margin-bottom: 30px;
+  }
+  .homePenjelasan .content-top .content-right h3 {
+    margin: auto;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .homePenjelasan .background img {
+    width: 50vw;
+    bottom: -5px;
+  }
+  .deskripsi .content .teks h3 {
+    font-size: 1rem;
+  }
+  .deskripsi .content .teks .teks-left h3 {
+    font-size: 1rem;
+    width: 30px;
+    padding: 3px 12px;
+  }
+  .deskripsi .content .teks .teks-right {
+    margin-left: 20px;
+  }
+}

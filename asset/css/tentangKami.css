@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@500&display=swap");
+:root {
+  --orange: #ea4100;
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: #00334c;
+  --gray: #808080;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--white);
+  min-height: 100vh;
+}
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Teks */
+.heading {
+  font-family: "Ubuntu", sans-serif;
+  /* font-size: 5.591rem; */
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.heading1 {
+  font-family: "Ubuntu", sans-serif;
+  /* font-size: 4.409rem; */
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+.heading2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.704rem; */
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--white);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Home */
+.homeTentangKami {
+  background-image: url(../image/tentangKami/background_tentangKami.svg);
+  background-position: 0 -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.homeTentangKami .content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.homeTentangKami .content h1 {
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+.homeTentangKami .content p {
+  color: var(--dark-blue);
+}
+.homeTentangKami .content .icon-panah img {
+  position: absolute;
+  width: 50px;
+  right: 50%;
+  top: 250px;
+  animation: float 2s linear infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+}
+
+/* Ide */
+.ide {
+  text-align: center;
+}
+.ide h2 {
+  margin-top: 15%;
+  margin-bottom: 40px;
+}
+.ide p {
+  max-width: 85%;
+  margin: auto;
+}
+
+/* Team */
+.team {
+  text-align: center;
+}
+.team .image {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+.team .person img {
+  width: 25vw;
+}
+.team .person .teks {
+  margin-top: 20px;
+}
+.team .person .teks h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 30px;
+}
+.team .person .teks h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Daftar Pustaka */
+.daftarPustaka .teks-atas {
+  text-align: center;
+  background-color: #e0e6e9;
+  padding: 40px;
+  width: 100vw;
+  transform: translateX(-9%);
+}
+.daftarPustaka .teks-atas h2 {
+  position: relative;
+  margin-bottom: 25px;
+}
+.daftarPustaka .teks-atas h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70px;
+  background-color: var(--orange);
+  height: 6px;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.daftarPustaka .teks-atas p {
+  max-width: 50%;
+  margin: auto;
+}
+.daftarPustaka .teks-bawah {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.daftarPustaka .teks-bawah h3 {
+  font-size: 3rem;
+}
+.daftarPustaka .teks-bawah p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+}
+.daftarPustaka .teks-bawah p span {
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .homeTentangKami .content h1 {
+    font-size: 3rem;
+  }
+  .homeTentangKami .content p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .ide h2,
+  .team h2,
+  .daftarPustaka .teks-atas h2 {
+    font-size: 2.5rem;
+  }
+  .ide p,
+  .daftarPustaka .teks-atas p {
+    font-size: 1.2rem;
+  }
+  .ide p {
+    max-width: 100%;
+  }
+  .team .person .teks h3 {
+    font-size: 1.5rem;
+    line-height: 15px;
+  }
+  .team .person .teks h4 {
+    font-size: 1.2rem;
+  }
+  .daftarPustaka .teks-atas h2::after {
+    top: 55px;
+    height: 5px;
+    width: 180px;
+  }
+  .daftarPustaka .teks-atas p {
+    max-width: 100%;
+  }
+  .daftarPustaka .teks-bawah h3 {
+    font-size: 2rem;
+  }
+  .daftarPustaka .teks-bawah p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeTentangKami {
+    background-position: 0;
+  }
+  .homeTentangKami .content {
+    margin-top: -100px;
+  }
+  .homeTentangKami .content .icon-panah img {
+    width: 10vw;
+    bottom: 40px;
+    right: 45%;
+    top: 200px;
+  }
+  .homeTentangKami .content h1 {
+    font-size: 2rem;
+    min-width: 100%;
+    margin-bottom: 10px;
+  }
+  .homeTentangKami .content p {
+    font-size: 0.8rem;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .ide h2,
+  .team h2,
+  .daftarPustaka .teks-atas h2 {
+    font-size: 1.8rem;
+  }
+  .ide p,
+  .daftarPustaka .teks-atas p {
+    font-size: 0.9rem;
+  }
+  .team .image {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .team .person .teks {
+    margin-top: 10px;
+  }
+  .team .riyan {
+    margin-top: 50px;
+  }
+  .team .person .teks h3 {
+    font-size: 1rem;
+    line-height: 15px;
+  }
+  .team .person .teks h4 {
+    font-size: 0.9rem;
+  }
+  .daftarPustaka .teks-atas h2::after {
+    top: 40px;
+  }
+  .daftarPustaka .teks-bawah {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .daftarPustaka .teks-bawah h3 {
+    text-align: center;
+  }
+}
