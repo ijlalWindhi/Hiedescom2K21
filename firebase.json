@@ -1,0 +1,9 @@
+{
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  },
+  "hosting": {
+    "site": "mainkan",
+    "public": "public"
+  }
+}
